@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INSCRIÇÃO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: lightblue;
+}
+header {
+    background-color: #08116e;
+    padding: 5px;
+    font-family: BioRhyme;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+/* INICIO - MOSTRAR E OCULTAR MENU */
+/* Checkbox Hack */
+#toggle-1 {
+   display:none;
+}
+
+label {
+    -webkit-appearance: push-button;
+    -moz-appearance: button; 
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* CSS padrão da div */
+
+.menu-label {
+    cursor: pointer;
+}
+#mostra {
+   display:none;
+}
+
+/* CSS quando o checkbox está marcado */
+#toggle-1:checked ~ #mostra {
+   display:block;
+}
+/* FIM - MOSTRAR E OCULTAR MENU*/
+
+.menu {
+    float: left;
+    width: 20%;
+}
+.menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.right {
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+}
+form {    
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button[type="submit"]{
+    padding: 10px;
+    background-color: #2c702e;
+    color: white;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    color: blue;
+}
+footer img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h4>IFCE TECH</h4>
+        <p>Entre em contato</p>
+    </header>
+
+    <label for="toggle-1" class="menu-label">
+        <img src="interface.png">
+    </label>
+    <input type="checkbox" id="toggle-1">
+
+    <div id="mostra" class="menu">
+        <div class="menuitem">
+            <a href="index.html"> O Evento </a>
+        </div>
+        <div class="menuitem">
+            <a href="programacao.html"> Programação </a>
+        </div>
+        <div class="menuitem">
+            <a href="palestrantes.html"> Palestrantes </a>
+        </div>
+        <div class="menuitem">
+            <a href="contato.html"> Contato </a>
+        </div>
+        <div class="menuitem">
+            <a href="inscricao.html"> Inscreva-se </a>
+        </div>
+      </div>
+
+<div style="overflow:auto">
+
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <label>Nome Completo:</label>
+                <input type="text">
+                <label>CPF:</label>
+                <input type="text">
+            </div>
+            <div class="form-row">
+                <label>Telefone:</label>
+                <input type="tel">
+                <label>E-mail:</label>
+                <input type="email">
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password">
+                <label>Confirme a senha:</label>
+                <input type="password"> 
+            </div>
+            <button type="submit">Criar conta</button>                    
+        </form>
+    </div>
+
+  <div class="right">
+    
+  </div>
+</div>
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+<footer>
+    <ul>    
+        <li>
+            <img src="people_15131817.png">
+        </li>
+    
+        <li>
+            Conecte-se com uma comunidade <br>de pessoas apaixonadas <br>por tecnologia e inovação.
+        </li>
+        <li>
+            <img src="calendar_2693507.png">
+        </li>
+        <li>
+            22, 23 e 24 de maio.
+        </li>
+        <li>
+            <img src="location_535239.png">             
+        </li>
+        <li>
+            Auditório IFCE Tianguá
+        </li>
+    </ul>
+</footer>    
+</div>
+
+</body>
+</html>
